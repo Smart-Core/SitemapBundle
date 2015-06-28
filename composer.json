@@ -12,8 +12,7 @@
         }
     ],
     "require": {
-        "php": ">=5.4.1",
-        "fabpot/goutte": "~3.0@dev"
+        "fabpot/goutte": "*"
     },
     "autoload": {
         "psr-4": { "SmartCore\\Bundle\\SitemapBundle\\": "" }
