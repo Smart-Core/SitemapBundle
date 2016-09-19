@@ -3,7 +3,7 @@ services:
     smart_sitemap:
         class: SmartCore\Bundle\SitemapBundle\Service\SitemapService
         arguments:
-            - @doctrine.orm.default_entity_manager
-            - %smart_sitemap.base_url%
-            - %smart_sitemap.ignores%
-            - %smart_sitemap.target%
+            - "@doctrine.orm.default_entity_manager"
+            - "%smart_sitemap.base_url%"
+            - "%smart_sitemap.ignores%"
+            - "%smart_sitemap.target%"
