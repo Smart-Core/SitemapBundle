@@ -1,7 +1,7 @@
 smart_sitemap:
     base_url:  http://example.org
     limit:     50000
-    target:    %kernel.root_dir%/../web
+    target:    "%kernel.root_dir%/../web"
     ignores:
         - /blog/tag/
         - /blog/archive/
