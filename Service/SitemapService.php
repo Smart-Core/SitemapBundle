@@ -42,7 +42,7 @@ class SitemapService
         $this->ignores  = $ignores;
         $this->target   = $target;
         $this->em       = $em;
-        $this->urlRepo  = $em->getRepository('SmartSitemapBundle:Url');
+        $this->urlRepo  = $em->getRepository(Url::class);
     }
 
     /**
@@ -82,7 +82,7 @@ class SitemapService
      */
     public function start()
     {
-        $this->em->getConnection()->exec('TRUNCATE TABLE '.$this->em->getClassMetadata('SmartSitemapBundle:Url')->getTableName());
+        $this->em->getConnection()->exec('TRUNCATE TABLE '.$this->em->getClassMetadata(Url::class)->getTableName());
 
         $url = new Url();
         $url->setLoc('/');
